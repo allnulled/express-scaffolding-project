@@ -16,7 +16,7 @@ module.exports = async function(templatePath, templateParameters = {}) {
         });
         return templateRendered;
     } catch (error) {
-        console.error("Error on batches/utils/send-email.imm.js:", error);
+        console.error("Error on src/batches/utils/send-email.imm.js:", error);
         throw error;
     }
 }

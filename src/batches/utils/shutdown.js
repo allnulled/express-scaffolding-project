@@ -6,6 +6,6 @@ module.exports = async function() {
         await new Promise(ok => this.server.close(asynchandler(ok)));
         this.state.active = false;
     } catch (error) {
-        this.utils.logger.error("Error on batches/utils/shutdown.js:", error);
+        this.utils.logger.error("Error on src/batches/utils/shutdown.js:", error);
     }
 };

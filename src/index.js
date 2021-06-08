@@ -13,13 +13,17 @@ const runtime = async function(tools) {
         await require(__dirname + "/batches/run/index.js")(tools);
         return tools;
     } catch (error) {
-        console.error("Error on index.js: ", error);
+        console.error("Error on src/index.js: ", error);
+        throw error;
     }
 }
 
 module.exports = runtime({ app }).then(all => {
     console.log(`     ✓ App «${process.env.APP_ID}» successfully running!`);
     return all;
+}).catch(error => {
+    console.error("Error starting the application:", error);
+    return error;
 });
 
 

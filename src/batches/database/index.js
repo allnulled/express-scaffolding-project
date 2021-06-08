@@ -29,7 +29,7 @@ module.exports = async function (tools) {
         });
         Object.assign(tools, { db });
     } catch (error) {
-        console.error("Error on batches/database/index.js:", error);
+        console.error("Error on src/batches/database/index.js:", error);
         throw error;
     }
 }

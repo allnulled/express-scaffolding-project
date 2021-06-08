@@ -11,7 +11,7 @@ module.exports = async function (tools) {
         console.log(`     ✓ ${process.env.APP_PROTOCOL}://${process.env.APP_HOST}:${process.env.APP_PORT}`);
         return tools;
     } catch (error) {
-        console.error("Error on batches/run/index.js:", error);
+        console.error("Error on src/batches/run/index.js:", error);
         throw error;
     }
 }

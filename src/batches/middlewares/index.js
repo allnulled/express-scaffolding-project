@@ -10,7 +10,7 @@ module.exports = function (tools) {
             }
         });
     } catch (error) {
-        console.error("Error on batches/middlewares/index.js:", error);
+        console.error("Error on src/batches/middlewares/index.js:", error);
         throw error;
     }
 }

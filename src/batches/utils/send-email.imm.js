@@ -33,7 +33,7 @@ module.exports = function () {
             });
         };
     } catch (error) {
-        console.error("Error on batches/utils/send-email.imm.js:", error);
+        console.error("Error on src/batches/utils/send-email.imm.js:", error);
         console.error("[ERROR NOTE:] This error can be related with the account configured to send emails.");
         throw error;
     }

@@ -36,7 +36,7 @@ module.exports = function (tools) {
         app.get("*", require(__dirname + "/pages/errors/404-not-found.js")(tools));
         
     } catch (error) {
-        console.error("Error on batches/controllers/index.js:", error);
+        console.error("Error on src/batches/controllers/index.js:", error);
         throw error;
     }
 }

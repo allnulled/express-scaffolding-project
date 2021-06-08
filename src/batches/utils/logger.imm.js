@@ -64,7 +64,7 @@ module.exports = function () {
         };
         return logger;
     } catch (error) {
-        console.error("Error on batches/utils/logger.imm.js:", error);
+        console.error("Error on src/batches/utils/logger.imm.js:", error);
         throw error;
     }
 }

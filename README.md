@@ -28,9 +28,9 @@ Dado que ya viene provisto de muchas cosas básicas, los pasos, grosso modo, son
     - `package.json`
   - Ejecutar de nuevo `npm shrinkwrap`
   - Crea las variables de entorno necesarias en:
-    - `src/batches/utils/.env`
-    - `src/batches/utils/.env.development`
-    - `src/batches/utils/.env.production`
+    - `src/batches/configurations/.env`
+    - `src/batches/configurations/.env.development`
+    - `src/batches/configurations/.env.production`
   - Cambiar el script de base de datos en:
     - `src/batches/database/database.sql`
   - Añadir los nuevos controladores en:

@@ -46,7 +46,7 @@ module.exports = async function (tools) {
         tools.server = http.createServer(tools.app);
         
     } catch (error) {
-        console.error("Error on batches/setup/index.js:", error);
+        console.error("Error on src/batches/setup/index.js:", error);
         throw error;
     }
 }
