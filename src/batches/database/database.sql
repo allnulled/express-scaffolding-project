@@ -22,4 +22,18 @@ CREATE TABLE sesiones (
     momento_creacion DATETIME NOT NULL,
     FOREIGN KEY (id_usuario) REFERENCES usuarios (id)
 );
-
+CREATE TABLE grupos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(200) NOT NULL UNIQUE
+);
+CREATE TABLE privilegios (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(200) NOT NULL UNIQUE
+);
+CREATE TABLE grupos_y_privilegios (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_grupo INT NOT NULL,
+    id_privilegio INT NOT NULL,
+    FOREIGN KEY (id_grupo) REFERENCES grupos (id),
+    FOREIGN KEY (id_privilegio) REFERENCES privilegios (id)
+);

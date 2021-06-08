@@ -45,7 +45,7 @@ Dado que ya viene provisto de muchas cosas básicas, los pasos, grosso modo, son
 
 ## Variables de entorno necesarias
 
-En el fichero `src/batches/utils/.env`:
+En el fichero `src/batches/configurations/.env`:
 
 ```
 NODE_ENV=
@@ -59,7 +59,7 @@ APP_PAGE_TITLE=
 SESSION_MAX_OPENED_PER_USER=
 ```
 
-En los ficheros `src/batches/utils/.env.development` y `.env.production`:
+En los ficheros `src/batches/configurations/.env.development` y `.env.production`:
 
 ```
 DATABASE_HOST=
